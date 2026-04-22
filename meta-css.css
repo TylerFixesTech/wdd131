@@ -9,3 +9,30 @@ body {
     border: 1px solid grey;
     padding: 50px;
     }
+
+p {
+    color: blue;
+    font-size: 1.3em;
+}
+
+hr {
+    height 3px;
+    background-color: blue;
+    width 80%;
+}
+h1, h2, p {
+    text-align: center;
+}
+#topics {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+.list {
+    list-style-type: none;
+}
