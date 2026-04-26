@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #000;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 920px;
+  min-height: 884px;
+  border: 1px solid #999;
+  padding: 84px 160px 55px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 7px;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 22px auto 46px;
+  padding-bottom: 5px;
+  width: 600px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #006eb6;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 17px;
+}
+
+p,
+li {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 24px;
+}
+
+.italic {
+  font-style: italic;
+  margin-top: 18px;
+}
+
+ol {
+  margin: 0;
+  padding-left: 40px;
+}
+
+li {
+  margin-bottom: 22px;
+  padding-left: 3px;
+}
+
+.logo {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.logo img {
+  width: 220px; /* adjust if needed */
+  max-width: 100%;
+}
