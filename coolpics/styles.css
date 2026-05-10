@@ -1,0 +1,94 @@
+/* Reset default spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #4a7ecb;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Menu - MOBILE: hidden links */
+.menu ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+/* Main content */
+main {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Images */
+.gallery img {
+    width: 85%;
+    aspect-ratio: 1 /1;
+    object-fit: cover; 
+    margin: 0 auto;
+    display: block;
+    border: 6px solid #eee;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+}
+
+/* Footer */
+footer {
+    background-color: #4a7ecb;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* TABLET */
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    .gallery img {
+        width: 100%;
+    }
+}
+/* DESKTOP */
+@media (min-width: 900px) {
+
+    /* show menu links */
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu p {
+        display: none; /* hide "Menu" text */
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* 3-column gallery */
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .gallery img {
+        width: 100%; /* no side gaps */
+    }
+
+}
