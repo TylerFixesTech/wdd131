@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tyler Tinney">
+    <title>Cool Pics 📷</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="coolpics.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Cool Pics 📷</h1>
+
+    
+    <!-- Menu button -->
+    <button id="menuBtn">Menu</button>
+
+    
+    <!-- DESKTOP NAV -->
+    <nav class="desktop-nav">
+        <ul>
+            <li>Home</li>
+            <li>Recent</li>
+            <li>Posts</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+
+    
+    <nav id="mobileMenu">
+        <ul>
+            <li>Home</li>
+            <li>Recent</li>
+            <li>Posts</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+    <h2>Current Work</h2>
+    
+    <section class="gallery">
+        <!-- Repeat image cards -->
+        <img src="images/norris-sm.jpg" data-full="images/norris-full.jpg" class="clickable">
+        <img src="images/norris-sm.jpg" data-full="images/norris-full.jpg" class="clickable">
+        <img src="images/norris-sm.jpg" data-full="images/norris-full.jpg" class="clickable">
+        <img src="images/norris-sm.jpg" data-full="images/norris-full.jpg" class="clickable">
+        <img src="images/norris-sm.jpg" data-full="images/norris-full.jpg" class="clickable">
+        <img src="images/norris-sm.jpg" data-full="images/norris-full.jpg" class="clickable">
+</main>
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+    <span id="closeImage">&times;</span>
+    <img class="modal-img" id="modalImg">
+</div>
+<footer>
+    <p>© 2026 Cool Pics | This is only a test</p>
+</footer>
+
+</body>
+</html>

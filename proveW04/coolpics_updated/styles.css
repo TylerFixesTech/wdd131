@@ -1,0 +1,199 @@
+/* Reset default spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #4a7ecb;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+#menuBtn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+
+/* Menu - MOBILE: hidden links */
+.menu ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+/* Main content */
+main {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+/* Image gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Images */
+.gallery img {
+    width: 85%;
+    aspect-ratio: 1 /1;
+    object-fit: cover; 
+    margin: 0 auto;
+    display: block;
+    border: 6px solid #eee;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+}
+
+/* Footer */
+footer {
+    background-color: #4a7ecb;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* hidden menu */
+#mobileMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* when open */
+#mobileMenu.show {
+    max-height: 200px; /* enough for menu items */
+}
+
+/* style list */
+#mobileMenu ul {
+    list-style: none;
+    padding: 0;
+    background-color: #4a7ecb;
+}
+
+#mobileMenu li {
+    padding: 10px;
+    color: white;
+}
+
+
+/* Modal background */
+.modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal box */
+.modal-content {
+    background: white;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Close button */
+#closeMenu {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-img {
+    display: block;
+    margin: 10% auto;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#closeImage {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+/* TABLET */
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    .gallery img {
+        width: 100%;
+    }
+}
+/* DESKTOP */
+@media (min-width: 900px) {
+
+    #mobileMenu {
+        display: none;
+    }
+
+    /* 3-column gallery */
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    /* hide menu button */
+    #menuBtn {
+        display: none;
+    }
+
+    /* show desktop nav */
+    .desktop-nav {
+        display: block;
+    }
+
+    .desktop-nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+    }
+}
