@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Ticket</title>
+  <link rel="stylesheet" href="eventform.css">
+  <script src="eventform.js" defer></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Event Ticket</h1>
+
+    <form id="eventForm">
+      
+      <!-- Row 1 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName">
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName">
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group full">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+      </div>
+
+      <!-- Row 2 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="type">Type</label>
+          <select id="type">
+            <option>Choose one</option>
+            <option>Student</option>
+            <option>Guest</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Event Date</label>
+          <input type="date" id="date">
+        </div>
+      </div>
+
+
+        <div class="form-group full hidden" id="studentIdGroup">
+            <label for="studentId">Student ID#</label>
+            <input type="text" id="studentId" maxlength="9">
+        </div>
+
+
+        <div class="form-group full hidden" id="accessCodeGroup">
+            <label for="accessCode">Access Code</label>
+            <input type="text" id="accessCode">
+        </div>
+
+
+      <!-- Button -->
+      <button type="submit">Create Ticket</button>
+      <!-- /errorMessage/ -->
+      <p id="errorMessage"></p>
+
+      <!--Ticket Output-->
+        <div id="ticketOutput"></div>
+
+    </form>
+  </main>
+
+</body>
+</html>
