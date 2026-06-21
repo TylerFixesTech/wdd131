@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Card</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Character Card">
+  <meta property="og:description" content="View and interact with a fantasy character card">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:image" content="https://yourwebsite.com/images/swamp-beast.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Character Card">
+  <meta name="twitter:description" content="View and interact with a fantasy character card">
+  <meta name="twitter:image" content="https://yourwebsite.com/images/swamp-beast.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="card">
+  <img src="snortleblat.webp" alt="Snortleblat" class="image">
+
+  <div class="name" id="name"></div>
+
+  <div class="stats">
+    <p id="class"></p>
+    <p id="level"></p>
+    <p id="health"></p>
+  </div>
+
+  <div class="buttons">
+    <button onclick="attackCharacter()">Attacked</button>
+    <button onclick="levelUpCharacter()">Level Up</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
