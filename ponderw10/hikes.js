@@ -101,13 +101,9 @@ function search() {
 
     let sortedHikes = filteredHikes.sort(compareHikes);
 
-    // clear out any previous content
-    hikeContainer.innerHTML = '';
-    // output onto screen
-    sortedHikes.forEach(function(hike){
-      renderHike(hike);
-    })
-}
+   hikeContainer.innerHTML = sortedHikes.map(hikesTemplate).join('');
+    }
+
 
 
 /* for the enter key to work on search - not just clicking the search button */
