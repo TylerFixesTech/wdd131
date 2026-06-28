@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecipeBook | Apple Crisp</title>
+  <meta name="description" content="Find simple and delicious recipes like warm apple crisp with vanilla ice cream.">
+
+  <!-- Open Graph: Facebook, LinkedIn, etc. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RecipeBook">
+  <meta property="og:description" content="Find simple and delicious recipes like warm apple crisp with vanilla ice cream.">
+  <meta property="og:url" content="https://tylerfixestech.github.io/wdd131/recipes/index.html">
+  <meta property="og:image" content="images/social-preview-image.png">
+
+  <!-- X / Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RecipeBook">
+  <meta name="twitter:description" content="Find simple and delicious recipes like warm apple crisp with vanilla ice cream.">
+  <meta name="twitter:image" content="images/social-preview-image.png">
+
+  <!-- Favicon and Apple Touch Icon -->
+  <link rel="icon" href="images/icons8-cooking-book-16.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="recipes.js" defer></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <a class="logo-link" href="index.html" aria-label="RecipeBook home">
+        <img src="images/recipe-book.png" alt="RecipeBook logo" class="logo">
+        <span class="site-title">RecipeBook</span>
+      </a>
+    </header>
+
+    <main>
+      <form class="search-form" role="search">
+        <label for="recipe-search" class="sr-only">Search for a recipe</label>
+        <input
+          type="search"
+          id="recipe-search"
+          name="recipe-search"
+          placeholder="Find a recipe"
+        >
+        <button type="submit" aria-label="Search recipes">
+          <img src="images/search.svg" alt="" aria-hidden="true">
+        </button>
+      </form>
+
+      <hr>
+
+      <section class="recipes" aria-label="Recipe results"></section>
+    </main>
+
+    <footer>
+      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+        Recipe icons created by Freepik - Flaticon
+      </a>
+
+      <div class="social">
+        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+        <a href="#" aria-label="Instagram">
+          <img src="images/instagram_icon.svg" alt="instagram icon">
+        </a>
+        <a href="#" aria-label="YouTube">
+          <img src="images/youtube_icon.svg" alt="youtube icon">
+        </a>
+        <a href="#" aria-label="Pinterest">
+          <img src="images/pinterest_icon.svg" alt="pinterest icon">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
