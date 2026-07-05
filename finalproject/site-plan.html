@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Duel Puzzle Academy Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Duel Puzzle Academy Project Plan</h1>
+			<h2>Tyler Tinney</h2>
+			<h2>WDD 131</h2>
+		</header>
+
+		<main>
+			<hr />
+			<h2>Overview</h2>
+
+			<h3>Purpose</h3>
+			<p>
+				The purpose of Duel Puzzle Academy is to give users a simple, interactive
+				trading card duel puzzle experience. Instead of playing a full card game,
+				users will solve short duel situations by choosing the best move from a
+				small list of options. The site will help users practice basic decision
+				making, reading card information, and thinking through battle outcomes.
+			</p>
+
+			<h3>Audience</h3>
+			<p>
+				The audience for this site is students, casual card game fans, and users
+				who enjoy short logic puzzles. The site is designed for beginners, so each
+				puzzle will include clear directions, simple card descriptions, and feedback
+				after the user submits an answer. Users will not need to know every rule of
+				a full trading card game to understand the puzzles.
+			</p>
+
+			<h3>Dynamic elements</h3>
+			<p>
+				The site will use JavaScript to display one duel puzzle at a time from an
+				array of puzzle objects. Each puzzle object will include player life points,
+				opponent life points, cards in the player's hand, cards on the field, answer
+				choices, a hint, and the correct answer. Users will be able to select an
+				answer, submit it, receive feedback, move to the next puzzle, and see their
+				score update. JavaScript will also be used to show hints, check whether the
+				selected answer is correct, and display a final results message after all
+				three puzzles are completed.
+			</p>
+
+			<hr />
+			<h2>Branding</h2>
+
+			<h3>Website Logo</h3>
+			<p>
+				The logo will be a simple text-based logo using the initials DPA for Duel
+				Puzzle Academy. This keeps the design simple and avoids needing a complex
+				custom image.
+			</p>
+
+			<div class="logo-preview" aria-label="Duel Puzzle Academy logo">
+				DPA
+			</div>
+
+			<hr />
+			<h2>Style Guide</h2>
+
+			<h3>Color Palette</h3>
+
+			<p>
+				Palette URL:
+				<a
+					href="https://coolors.co/111827-7c2d12-f59e0b-f8fafc-1f2937"
+					target="_blank"
+					rel="noopener"
+					>https://coolors.co/111827-7c2d12-f59e0b-f8fafc-1f2937</a
+				>
+			</p>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<tr>
+						<td class="primary">#111827</td>
+						<td class="secondary">#7C2D12</td>
+						<td class="accent1">#F59E0B</td>
+						<td class="accent2">#F8FAFC</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Typography</h3>
+			<p>
+				The site will use simple, readable fonts. Headings will use a bold sans-serif
+				font to give the site a game-like feel, while body text will use a clean
+				sans-serif font for readability. The design will focus on strong contrast,
+				large buttons, and clear spacing so the puzzles are easy to use on both
+				mobile and desktop screens.
+			</p>
+
+			<h3>Pseudocode for your project</h3>
+
+			<p>
+				Create an array called puzzle. Each puzzle will be an object with a title,
+				difficulty, player life points, opponent life points, cards, choices, correct
+				answer, hint, and explanation.
+			</p>
+
+			<p>
+				When the page loads, display the first puzzle. Use a function to render the
+				current puzzle information on the page. Use array methods such as forEach to
+				display the answer choices as buttons or radio options.
+			</p>
+
+			<p>
+				When the user selects an answer and clicks the submit button, check the
+				selected answer against the correct answer stored in the puzzle object. If
+				the answer is correct, display a positive message and increase the user's
+				score. If the answer is incorrect, display a helpful message and explain why
+				another move is better.
+			</p>
+
+			<p>
+				When the user clicks the next button, move to the next puzzle. If there are
+				no puzzles left, display the final score and a short message based on the
+				user's results.
+			</p>
+
+			<h3>Wireframes</h3>
+			<p>
+				The site will use one main page. The layout will change between mobile and
+				desktop views. On mobile, the page will stack the puzzle information in one
+				column. On desktop, the duel information and answer choices can be displayed
+				side by side.
+			</p>
+
+			<h3>Landing Page / Puzzle Page</h3>
+			<p>
+				The landing page will introduce the app and immediately show the first duel
+				puzzle. The page will include a header, short instructions, puzzle progress,
+				card information, answer choices, hint button, submit button, feedback area,
+				and next puzzle button.
+			</p>
+
+			<h4>Mobile Wireframe</h4>
+			<pre>
+------------------------------------------------
+| Duel Puzzle Academy                          |
+| Solve short duel puzzles                     |
+------------------------------------------------
+| Puzzle 1 of 3                                |
+| Title: Finish the Duel                       |
+| Difficulty: Easy                             |
+------------------------------------------------
+| Your LP: 2000                                |
+| Opponent LP: 1800                            |
+------------------------------------------------
+| Your Hand                                    |
+| [Card] [Card]                                |
+------------------------------------------------
+| Your Field                                   |
+| [Monster Card]                               |
+------------------------------------------------
+| Opponent Field                               |
+| [Monster Card]                               |
+------------------------------------------------
+| What is the best move?                       |
+| ( ) Choice 1                                 |
+| ( ) Choice 2                                 |
+| ( ) Choice 3                                 |
+------------------------------------------------
+| [Show Hint] [Submit Answer]                  |
+------------------------------------------------
+| Feedback message appears here                |
+| [Next Puzzle]                                |
+------------------------------------------------
+			</pre>
+
+			<h4>Desktop Wireframe</h4>
+			<pre>
+--------------------------------------------------------------------------------
+| Duel Puzzle Academy                                                          |
+| Short duel puzzles where users choose the best move                           |
+--------------------------------------------------------------------------------
+| Puzzle 1 of 3                                      | Score: 0                 |
+--------------------------------------------------------------------------------
+| Duel Information                                  | Answer Choices           |
+| ------------------------------------------------  | -----------------------  |
+| Your LP: 2000                                     | What is the best move?   |
+| Opponent LP: 1800                                 | ( ) Choice 1             |
+|                                                    | ( ) Choice 2             |
+| Your Hand                                         | ( ) Choice 3             |
+| [Card] [Card]                                     |                          |
+|                                                    | [Show Hint]              |
+| Your Field                                        | [Submit Answer]          |
+| [Monster Card]                                    |                          |
+|                                                    | Feedback appears here    |
+| Opponent Field                                    | [Next Puzzle]            |
+| [Monster Card]                                    |                          |
+--------------------------------------------------------------------------------
+			</pre>
+		</main>
+	</body>
+</html>
