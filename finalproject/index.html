@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tyler Tinney">
+  <title>Duel Puzzle Academy</title>
+  <meta
+    name="Tyler's Duel Puzzle Academy"
+    content="A simple trading card duel puzzle where users choose the correct order of moves to win the duel."
+  >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo" aria-label="Duel Puzzle Academy logo">DPA</div>
+    <div>
+      <h1>Duel Puzzle Academy</h1>
+      <p>Solve the duel by choosing the correct order of moves.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Break the Ultimate Dragon</h2>
+      <p>
+        Your opponent has 2000 Life Points left. They control Blue-Eyes Ultimate
+        Dragon and Mirror Wall. You have one turn to clear the field and win.
+      </p>
+    </section>
+
+    <section class="duel-board" aria-label="Duel puzzle board">
+      <div class="game-state">
+        <section class="life-points">
+          <h2>Life Points</h2>
+          <p><strong>You:</strong> <span id="player-lp"></span></p>
+          <p><strong>Opponent:</strong> <span id="opponent-lp"></span></p>
+        </section>
+
+        <section>
+          <h2>Your Hand</h2>
+          <div id="player-hand" class="card-grid"></div>
+        </section>
+
+        <section>
+          <h2>Opponent's Field</h2>
+          <div id="opponent-field" class="card-grid"></div>
+        </section>
+      </div>
+
+      <section class="answer-panel">
+        <h2>Choose the Best Move</h2>
+
+        <form id="puzzle-form">
+          <fieldset>
+            <legend>Move order options</legend>
+            <div id="choices"></div>
+          </fieldset>
+
+          <div class="button-row">
+            <button type="button" id="hint-button">Show Hint</button>
+            <button type="submit">Submit Answer</button>
+            <button type="button" id="reset-button">Reset</button>
+          </div>
+        </form>
+
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Educational fan project for WDD 131 at BYU Idaho. Card names and images belong to their
+      respective copyright owners. (Konami, 1993). This project is not affiliated with or endorsed by Konami or any other company.
+    </p>
+  </footer>
+
+  
+</body>
+</html>
